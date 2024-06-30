@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mockup Page</title>
+    <link rel="stylesheet" href="sstyle.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+           <div><img src="logo.jpg" alt="Logo" class="logo"></div></nav>
+           <div><b>SPECTACLTALES</div>
+            <div class="contact">CONTACT</div>
+        </header>
+        <main>
+            <div class="intro"><p >An online store for spectacles offers customers the convenience of browsing and purchasing a wide variety of eyewear from the comfort of their own home. These stores typically feature an extensive selection of frames, lenses, and styles to suit different tastes and needs, including prescription glasses, sunglasses, and blue light blocking glasses. Many online eyewear retailers provide virtual try-on tools, allowing customers to see how different frames will look on their faces before making a purchase. Additionally, customers can often upload their prescriptions and customize their lenses, ensuring they receive the perfect pair of spectacles. With competitive pricing, frequent discounts, and fast shipping options, online spectacles stores make it easy and affordable to get stylish and functional eyewear delivered right to your door.</p>
+            </div>
+            <form action = "javascript:submitForm()" onSubmit = "return validate()">
+                <table>
+                    <tr>
+                        <td><label for="name">Name</label></td>
+                        <td><input type="text" id="name" name="name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="genre">Face Type</label></td>
+                        <td>
+                            <input list="genres" id="genre" name="genre" required>
+                            <datalist id="genres">
+                                <option value="Round">
+                                <option value="Oval">
+                                <option value="Enlongated">
+                                <option value="Square">
+                                <option value="Reactangle">
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="subscribe">Subscribe</label></td>
+                        <td>
+                            <input type="checkbox" id="subscribe" name="subscribe" required>
+                            <label for="subscribe">Subscribe to our newsletter via email</label>
+                        </td>
+                    </tr>
+                </table>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+        <footer>
+            All rights reserved
+        </footer>
+    </div>
+    <script>
+        function submitForm(){
+            window.alert("Form submtted")
+        }
+    </script>
+</body>
+</html>
